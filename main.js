@@ -8,12 +8,12 @@ document.addEventListener("keypress", jump);
 
 //game variables
 
-var onGround = true;
-var leftPressed = false;
-var rightPressed = false;
-var max_speed = 4;
-var characterAcceleration = 0.25;
-var onPlat = false;
+let onGround = true;
+let leftPressed = false;
+let rightPressed = false;
+let max_speed = 4;
+let characterAcceleration = 0.25;
+let onPlat = false;
 
 //game objects
 
@@ -39,18 +39,18 @@ class Platform{
 }
 //initialize character
 
-var box = new Character();
+let box = new Character();
 
 //initialize platforms
 
-var plat1 = new Platform(0, canvas.height-80);
-var plat2 = new Platform(canvas.width/3, canvas.height-160);
-var plat3 = new Platform(canvas.width*2/3, canvas.height-240);
-var plat4 = new Platform(30, canvas.height - 300, canvas.width/4);
-var plat5 = new Platform(200, canvas.height - 390, canvas.width/10);
-var plat6 = new Platform(360, canvas.height - 470, canvas.width/10);
+let plat1 = new Platform(0, canvas.height-80);
+let plat2 = new Platform(canvas.width/3, canvas.height-160);
+let plat3 = new Platform(canvas.width*2/3, canvas.height-240);
+let plat4 = new Platform(30, canvas.height - 300, canvas.width/4);
+let plat5 = new Platform(200, canvas.height - 390, canvas.width/10);
+let plat6 = new Platform(360, canvas.height - 470, canvas.width/10);
 
-var platArray = [plat1, plat2, plat3, plat4, plat5, plat6];
+let platArray = [plat1, plat2, plat3, plat4, plat5, plat6];
 
 //functions
 
